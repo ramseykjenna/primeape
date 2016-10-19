@@ -1343,12 +1343,6 @@ ee-first@1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
 
-ember-ajax@^2.4.1:
-  version "2.5.2"
-  resolved "https://registry.yarnpkg.com/ember-ajax/-/ember-ajax-2.5.2.tgz#aefd6f860b03ab75c97e73ed410aa9e371ea88c6"
-  dependencies:
-    ember-cli-babel "^5.1.5"
-
 ember-cli-app-version@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/ember-cli-app-version/-/ember-cli-app-version-2.0.0.tgz#18ad746c5c05e8556823fe6e779191419e967c36"
