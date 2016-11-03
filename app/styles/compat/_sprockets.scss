@@ -1,0 +1,9 @@
+@function image-path($path) {
+  @warn '[deprecated] rails helpers should be re-written (image-path).';
+  @return '/assets/images/' + $path;
+}
+
+@function image-url($path) {
+  @warn '[deprecated] rails helpers should be re-written (image-url).';
+  @return url(image-path($path));
+}

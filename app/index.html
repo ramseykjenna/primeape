@@ -10,6 +10,24 @@
     {{content-for "head"}}
 
     <link rel="stylesheet" href="{{rootURL}}assets/vendor.css">
+    <link rel="stylesheet" href="{{rootURL}}assets/app-vendor.css">
+    <link rel="stylesheet" href="{{rootURL}}assets/primeape-responsive-tablet-to-small-desktop.css" media="only screen and (max-width:979px)">
+    <link rel="stylesheet" href="{{rootURL}}assets/primeape-responsive-phone-to-tablet.css" media="only screen and (max-width:767px)">
+    <link rel="stylesheet" href="{{rootURL}}assets/primeape-responsive-phone.css" media="only screen and (max-width:767px)">
+
+    <!--[if lt IE 10]>
+      <link rel="stylesheet" href="{{rootURL}}assets/primeape-responsive-lt-ie10.css">
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+      <link rel="stylesheet" href="{{rootURL}}assets/primeape-responsive-lt-ie9.css">
+    <![endif]-->
+
+    <!--[if lt IE 8]>
+      <link rel="stylesheet" href="{{rootURL}}assets/primeape-responsive-lt-ie8.css">
+    <![endif]-->
+
+    <link rel="stylesheet" href="{{rootURL}}assets/primeape-print.css" media="print">
     <link rel="stylesheet" href="{{rootURL}}assets/primeape.css">
 
     {{content-for "head-footer"}}
