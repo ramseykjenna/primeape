@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Sort Bar */
+.sort-bar {
+  margin-bottom: 5px;
+  clear:both;
+}
+#search-filter{width:100%;}
+#search-filter.input-append{margin:0;}
+#search-filter.input-append input{width:80%;}
+#search-filter.input-append button{width:20%;}
+
+.sort-bar ul.filter-option{list-style: none; margin: 0; padding:0;}
+.sort-bar li.sort-filter{display: inline-block; margin: 0;}
+
+#status-options, #date-options, #datepicker, .input-daterange, #sort-filter, #job-accounts-options{display: inline-block; margin-right:5px; margin-bottom: 5px; vertical-align: middle;}
+#sort-filter{min-width: 175px;}
+#search-filter input{margin: 0; margin-bottom: 5px;}
+
+.sort-bar .input-daterange .add-on{margin-left: 0;  margin-right: 0;}
+.sort-bar ul.dropdown-menu.item-count{min-width: 0px; width:65px;}
+.sort-bar li a i{float:right; margin-top:3px; margin-left:50px; color:#008FC5;}
+.sort-bar li a i.icon-sort{opacity: .3;}
+.sort-bar li a:hover i.icon-sort{opacity: 1;}
+.sort-bar li i.icon-sort-up:after, .sort-bar li i.icon-sort-down:after {
+  position: absolute;
+  opacity: .3;
+  top:7px;
+  right:12px;
+  content: "\f0dc";
+}
+.sort-bar li ul li i.icon-sort-up:after, .sort-bar li ul li i.icon-sort-down:after{
+  top: 11px;
+  right: 20px;
+}
+
+.dropdown-menu > li > a:hover i{color:#FFF;}

@@ -1,0 +1,12 @@
+@charset "UTF-8";
+#notification-window .browser-notice{display: block;/* IE8 and below */}
+
+nav.side-menu.left{
+  scrollbar-base-color: #008FC5;
+  scrollbar-3dlight-color: #008FC5;
+  scrollbar-highlight-color: #008FC5;
+  scrollbar-track-color: #01506F;
+  scrollbar-arrow-color: #01506F;
+  scrollbar-shadow-color: #008FC5;
+  scrollbar-dark-shadow-color: #008FC5;
+}

@@ -1,0 +1,52 @@
+/*Item Detail Table Reflow Adjustments - media query max-width:640px*/
+.reflow td.no-wrap{
+  white-space: normal;
+  word-break: break-word;
+}
+td.qty-control, td.qty-value{padding-top:10px; border-bottom:1px solid #dddddd;}
+.reflow .list-thumbnail{
+  text-align: left;
+  margin: 0;
+}
+td.list-thumbnail img{max-height:120px;}
+.mobile-prefix:before{font-weight: bold; margin-top:4px; margin-bottom:4px;}
+.mobile-prefix .muted{display:inline-block;}
+.mobile-prefix .muted.extended-price{display: none;}
+.price, .total{margin-bottom: 4px;}
+.price .mobile-prefix:before{content:"Price: ";}
+.total .mobile-prefix:before{content:"Extended Price: ";}
+.availability .mobile-prefix:before{content:"Availability: ";}
+td.availability{
+  text-align: left;
+}
+
+td.qty-control label, .uom{display:inline-block;}
+.uom{padding-left:5px; line-height: 1em;}
+
+.reflow .list-thumbnail{display: block;}
+td.list-thumbnail, td.product-description{border-top:none; border-bottom:none;}
+tr.table-fixer td{display:none;}
+
+tr.subtotal td, tr.taxes td, tr.shipping td{border-bottom:none;}
+tr.subtotal td:first-child, tr.taxes td:first-child, tr.shipping td:first-child{border-top: 1px solid #dddddd; margin-bottom:0; }
+
+.table-bordered tbody:last-child tr.total:last-child > td:last-child{
+  -webkit-border-bottom-right-radius: 10px;
+  -moz-border-radius-bottomright: 10px;
+  border-bottom-right-radius:10px;
+}
+td.total-label{font-weight: bold;}
+td.total-labels{text-align:left;}
+tr.total td{border: 1px solid #dddddd;}
+
+#cart-contents.table-bordered  td {
+  border-left: 1px solid #dddddd;
+  border-top:none;
+  border-bottom:none;
+}
+#cart-contents.table-bordered  td:first-child{
+  border-top: 1px solid #dddddd;
+}
+#cart-contents.table-bordered  td:last-child{
+  border-bottom: 1px solid #dddddd;
+}

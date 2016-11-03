@@ -1,0 +1,136 @@
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+       -o-border-radius: $radius;
+          border-radius: $radius;
+}
+
+/* BootStrap 2.3.2 Changes Not Required in BootStap 3/4 */
+@media (max-width: 767px){
+  body {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .container {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+}
+
+.btn{
+  background-image: none;
+  text-shadow:none;
+  -webkit-box-shadow: none;
+  box-shadow:none;
+  border:none;
+
+}
+.btn.btn-default, .btn.cancel{
+  background-color: #D9D9D9;
+}
+.btn.btn-default:hover, .btn.cancel:hover{
+  background-color: #E1E1E1;
+}
+.input-append, .input-prepend{
+  margin-bottom: 0;
+}
+.input-append .btn, .input-prepend .btn{
+  border: 1px solid #CCC;
+  margin-bottom: 0;
+}
+.typeahead{
+  text-align: left;
+}
+
+
+/* TBS Tabs Left Adjustments */
+.tabs-left .tab-content{min-width: 150px;}
+
+/* TBS Modal Adjustments */
+div.modal {
+  color: #222;
+  min-width:290px;
+}
+.accordion-toggle{
+  background-color:#F9F9F9;
+}
+/* Service Center Modal */
+div.modal .service-center {
+  border-top: 1px solid #DFDFDF;
+  clear: both;
+  padding-top: 10px;
+}
+div.modal .service-center:first-child {
+  border-top: none;
+}
+div.modal .service-center .location-details {
+  float: left;
+  margin-bottom: 10px;
+}
+div.modal .service-center .options {
+  float: right;
+  text-align: right;
+  margin-bottom: 10px;
+}
+/* TBS Tab Fixes for Account History */
+ul.nav.nav-tabs.filter-selector{
+  margin-bottom:10px;
+}
+.tab-content.overflown{overflow:visible;}
+
+/* TBS Modal Fix */
+body.modal-open .wrapper{position:absolute; left:0; right:0; overflow: hidden; height:100%;}
+@media (max-height:640px) {
+  div.modal.in {
+    position: absolute;
+    top: 0;
+    @include border-radius(0px);
+    border: none;
+  }
+
+  div.modal.fade.in {
+    top: 0;
+  }
+  /* TBS Input Fix */
+  .modal {
+    input[type="text"],
+    input[type="password"],
+    input[type="datetime"],
+    input[type="datetime-local"],
+    input[type="date"],
+    input[type="month"],
+    input[type="time"],
+    input[type="week"],
+    input[type="number"],
+    input[type="email"],
+    input[type="url"],
+    input[type="search"],
+    input[type="tel"]{height: 30px !important;}
+  }
+  .modal {
+    /*display: block;*/
+    position: absolute;
+    top: 0;
+    border-radius: 0;
+    border:none;
+    margin-top: 0;
+/*    overflow: scroll;*/
+  }
+  .modal .modal-body{overflow:visible; max-height:100%; margin-bottom:50px;}
+  @media (max-width:480px) {
+    .modal {
+      left:0;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    .modal .modal-header, .modal .modal-footer{
+      left: 0;
+      right: 0;
+    }
+  }
+
+}
+
+/* End BootStrap 2.3.2 */

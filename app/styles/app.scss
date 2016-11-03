@@ -1,0 +1,8 @@
+// sprockets-compat contains shims used by rails-sass
+@import 'sprockets-compat';
+
+@import 'blue-harvest/application';
+
+// this needs to be debugged...
+// not working right now, because bourbon is err-ing as unavailable
+// @import 'blue-harvest/active_admin';

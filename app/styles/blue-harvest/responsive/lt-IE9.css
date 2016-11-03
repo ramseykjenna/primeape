@@ -1,0 +1,35 @@
+@charset "UTF-8";
+#notification-window .browser-notice{display: block;/* IE8 and below */}
+
+.ie-fallback{
+  display: inherit;
+}
+.until-ie-10{
+  display: none !important;
+}
+
+/* TBS Modal Fix */
+div.modal.in {
+  position: absolute;
+  top: 0;
+  border-radius: 0px;
+  border: none;
+}
+div.modal .modal-body {
+  overflow: visible;
+  max-height: 100%;
+}
+div.modal.fade.in {
+  top: 0;
+}
+
+/*Fix for overlay on IE in CM, 8 and 7*/
+.carousel-caption {
+  position: static;
+}
+
+/* Sort Bar Hacks */
+#search-filter input, #search-filter .btn{height: 40px !important;}
+.daterangepicker.dropdown-menu{min-width:650px;}
+.input-daterange{ position: relative; display:inline-block; white-space:nowrap; }
+.input-daterange > .btn{position: relative;display:inline-block;}

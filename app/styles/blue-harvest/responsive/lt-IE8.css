@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+#notification-window .browser-notice{*display: block;/* IE7 and below */}
+
+.input-append button {
+  margin-top: 1px;
+  height: 30px;
+}
+
+.row-fluid .span12 {
+  margin-left: 0;
+  width: 100%;
+}
+
+/*Form Field Fixes*/
+fieldset input[type='text']{width: 90% !important;}
+fieldset select{height:38px;}
+

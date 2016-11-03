@@ -1,0 +1,54 @@
+.site-result, .product-result {
+  padding: 15px;
+  border: 1px solid #E9E9E9;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+.product-image-link {
+  padding-top: 15px;
+  width: 200px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.product-thumb {
+  max-height: 150px;
+}
+.mfr-thumb{max-height:35px; display:block;}
+
+@media (max-width: 480px) {
+  .product-thumb {
+    max-height: 200px;
+  }
+
+  .product-image-link {
+    width: 100%;
+  };
+}
+
+
+.product-thumb, .mfr-thumb {
+  margin: 0 auto 10px;
+}
+
+
+.part-numbers {
+  float: left;
+  margin-bottom: 10px;
+}
+
+.mfg-part-number,.summit-part-number {
+  white-space: nowrap;
+}
+
+.product-control {
+  margin-left: 10px;
+  float: right;
+  text-align: right;
+  display: none;
+}
+
+.pricing {
+  font-size: 14px;
+}

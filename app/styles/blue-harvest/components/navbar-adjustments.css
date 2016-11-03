@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document */
+.navbar .navbar-inner {padding:0; padding-left:0; padding-right:0;}
+.navbar .btn{margin-top:0;}
+.navbar .btn-navbar{margin:2px; color:#666; margin-left:0;  text-shadow:none;}
+.navbar .nav > li > a {padding:10px;}
+.navbar .divider-vertical{margin:0;}
+.navbar h4, p, ul li {
+  line-height: 20px;
+}
+.navbar .nav-collapse.in.collapse{z-index:1;/*Fix for Sort Icons Appearing over Nav*/}
+.navbar .btn-navbar, .cart-menu .btn-navbar:hover, .cart-menu .btn-navbar:active{color:#333;}
+.navbar.cart-menu{margin-bottom: 10px;}
+
+@media (max-width: 979px){
+  .navbar .navbar-inner{background-image:none; border:none; background-color:#FFF; box-shadow:none;}
+  .navbar .nav-collapse.collapse {
+    position: absolute;
+    background-color: #F9F9F9;
+    margin-right:10px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  }
+
+  .navbar .nav-collapse.in.collapse{border: 1px solid #999;}
+  .navbar .nav-collapse.collapse ul{
+    margin:5px;
+  }
+  .navbar .nav-collapse .nav > li {border-top: 1px solid #EAEAEA;}
+  .navbar .nav-collapse .nav > li:first-child {border-top:none;}
+  .navbar .nav-collapse .nav > li > a{ margin-bottom:0;}
+  .navbar .dropdown-menu > li > a{white-space:normal;}
+  .navbar .btn-navbar{display:inline-block; float:none;}
+}

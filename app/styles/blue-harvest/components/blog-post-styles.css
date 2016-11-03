@@ -1,0 +1,8 @@
+@charset "utf-8";
+/* CSS Document */
+.post{
+  padding: 15px;
+  border: 1px solid #E9E9E9;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}

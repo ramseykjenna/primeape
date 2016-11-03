@@ -1,0 +1,116 @@
+@charset "utf-8";
+/* CSS Document */
+.well.well-small{
+  padding:15px;
+}
+.well{
+  position: relative; /* So we can position the banner within the box */
+}
+.well .media{
+  margin-top: 45px;
+}
+
+.ribbon-container, .ribbon-container .title{
+  padding: 0; /* Standard Reset, and we're adding box-sizing:border-box because it's awesome. */
+  margin: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; 
+}
+
+.ribbon-container {
+  position: inherit;
+  left: -25px;
+  overflow: visible; /* so we can see the pseudo-elements we're going to add to the anchor */
+  font-size: 18px; /* font-size and line-height must be equal so we can account for the height of the banner */
+  line-height: 18px;
+  margin-bottom: 15px;
+}
+@media screen{
+  /*Prevents IE from Breaking Fallback Method*/
+  .ribbon-container {
+    margin-right: -15px;
+  }
+}
+
+.ribbon-container .title {
+  display:block;
+  padding:5px 15px;
+  position:relative; /* positions pseudo-elements properly */
+  background-color:#01506F;
+  overflow:visible;
+  height:30px;
+  color:#fff;
+  text-decoration:none;
+}
+
+.ribbon-container .title:after { 
+  /* Ribbon Fold */
+  content:""; 
+  height: 0;
+  width: 0;
+  display:block;
+  position:absolute;
+  bottom:-5px;
+  left:0;
+  border-top: 5px solid #000055; 
+  border-left: 10px solid transparent;
+}
+
+.ribbon-container .title:before { 
+  /* Ribbon Fork */
+  content:"";
+  height: 0;
+  width: 0;
+  display:block;
+  position:absolute;
+  top:0;
+  right:-15px;
+  border-top: 30px solid #01506F; 
+  border-bottom: 30px solid transparent;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+}
+
+.ribbon-container a.title:hover {
+  background-color:#009ff1;
+}
+
+.ribbon-container a.title:hover:before { 
+  /* Ribbon Fork on Hover */
+  border-top-color: #0FC; 
+  border-bottom-color: #0FC;
+}
+
+
+
+/* Color Changes */
+  /* Red Ribbon */
+    .ribbon-container.red .title { 
+      background-color:#CC0000;
+    }
+    .ribbon-container.red .title:before {
+      /* ribbon fork */
+      border-top-color: #CC0000; 
+    }
+    .ribbon-container.red .title:after { 
+      /* Ribbon Fold */
+      border-top-color: #550000; 
+    }
+
+  /* Green Ribbon */
+    .ribbon-container.green .title { 
+      background-color:green;
+    }
+    .ribbon-container.green .title:before {
+      /* ribbon fork */
+      border-top-color: green; 
+    }
+    .ribbon-container.green .title:after { 
+      /* Ribbon Fold */
+      border-top-color: #005500; 
+    }
+@media print {
+  .ribbon-container .title{ border:1px solid #999; border-top-right-radius: 5px; border-bottom-right-radius: 5px;}
+  .ribbon-container .title:before{ display:none; border-top-color: #999; }
+}

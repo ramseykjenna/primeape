@@ -1,0 +1,186 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*-----------------Modified jQuery Mobile Table Reflow------------------*/
+/*http://view.jquerymobile.com/1.3.1/demos/examples/tables/movie-list.php
+ Styles for the table columntoggle mode
+*/
+.reflow td .ui-table-cell-label,
+.reflow th .ui-table-cell-label {
+  display: none;
+}
+
+table.reflow.table-bordered th, table.reflow.table-bordered td{
+  border-top: 1px solid #F1F1F1;
+}
+
+/* Prevent Sort Icon from Wrapping  */
+.reflow th{white-space: nowrap; text-overflow:ellipsis; overflow: hidden;}
+
+.table-scoller table{
+  margin: 0;
+}
+
+.reflow th.group-header {
+  white-space: normal;
+}
+.reflow th.group-header, .table-striped tbody > tr:nth-child(odd) > th.group-header {
+  background-color: #E1E1E1;
+  color:#666;
+  margin-top: 15px;
+}
+
+.reflow i.icon-comment{
+  color:#0CF;
+}
+
+.table-hover tbody tr:hover > td, .table-hover tbody tr:hover > th {
+  background-color: rgba(0,143,197,.1);
+}
+
+/* Mobile first styles: Begin with the stacked presentation at narrow widths */
+@media (max-width: 640px) {
+  /* Hide the table headers */
+  .reflow thead td,
+  .reflow thead th {
+    display: none;
+  }
+  /* Show the table cells as a block level element */
+  .reflow td,
+  .reflow th {
+    display: block;
+    white-space: normal;
+  }
+  /* Add a fair amount of top margin to visually separate each row when stacked */
+  .reflow tbody th {
+    margin-top: 3em;
+  }
+  /* Make the label elements a percentage width */
+  .reflow td .ui-table-cell-label,
+  .reflow th .ui-table-cell-label {
+    display: block;
+    padding: .4em;
+    min-width: 30%;
+    display: inline-block;
+    margin: -.4em 1em -.4em -.4em;
+  }
+  /* For grouped headers, have a different style to visually separate the levels by classing the first label in each col group */
+  .reflow th .ui-table-cell-label-top,
+  .reflow td .ui-table-cell-label-top {
+    display: block;
+    padding: .4em 0;
+    margin: .4em 0;
+    text-transform: uppercase;
+    font-size: .9em;
+    font-weight: normal;
+  }
+}
+.reflow th{background-color: #F8F8F8;}
+.reflow thead.sort th:hover{background-color: #F1F1F1;}
+.reflow thead.sort th a {display:block; font-size: 12px; line-height: 14px;}
+.reflow thead.sort th a i{margin-right:5px;}
+.reflow thead.sort th a i.icon-sort{opacity: .3;}
+.reflow thead.sort th a:hover i.icon-sort{opacity: 1;}
+
+/* Breakpoint to show as a standard table at 480px or wider */
+@media ( min-width: 640px ) {
+
+  /* Fixes table rendering when switching between breakpoints in Safari <= 5. See https://github.com/jquery/jquery-mobile/issues/5380 */
+  .reflow.ui-responsive {
+    display: table-row-group;
+  }
+
+  /*JEC Border Fix for display:table-row-group*/
+  .table-bordered{border:none;}
+  .table-bordered thead:first-child tr:first-child th{border-top: 1px solid #dddddd;}
+  .table-bordered tr th:last-child, .table-bordered td:last-child{border-right: 1px solid #dddddd;}
+  .table-bordered tr:last-child td{border-bottom: 1px solid #dddddd;}
+  tr.table-fixer td{width:2000px; background-color:#E9E9E9 !important; padding:1px;}
+
+  /* Show the table header rows */
+  .reflow td,
+  .reflow th,
+  .reflow tbody th,
+  .reflow tbody td,
+  .reflow thead td,
+  .reflow thead th, .table-striped tbody > tr:nth-child(odd) > th.group-header {
+    display: table-cell;
+    margin: 0;
+  }
+
+  /* Hide the labels in each cell */
+  .reflow  td .ui-table-cell-label,
+  .reflow  th .ui-table-cell-label {
+    display: none;
+  }
+}
+
+
+/* Hack to make IE9 and WP7.5 treat cells like block level elements, scoped to ui-responsive class */
+/* Applied in a max-width media query up to the table layout breakpoint so we don't need to negate this*/
+@media ( max-width: 640px ) {
+  .reflow td,
+  .reflow th {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+    clear: left;
+  }
+
+  thead.mobile-hidden{display: none;}
+
+  /*JEC Reflow Adjustments*/
+  .reflow{ border:none;}
+  .reflow td, .reflow th{ border-right:1px solid #dddddd; padding-left:10px; padding-right:10px;}
+  .reflow th{border-top:1px solid #dddddd !important;}
+  .reflow th a.sort i{float:left; margin-right:10px; margin-left:0;}
+  .reflow td:first-child, .reflow th:first-child, .reflow thead.sort:before{
+    border-top:1px solid #dddddd;
+    /*padding-top:10px;*/
+    -webkit-border-top-left-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    border-top-left-radius:3px;
+    -webkit-border-top-left-radius: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-right-radius:3px;
+  }
+  .table-bordered.reflow thead.sort:first-child tr:first-child > th:first-child, .table-bordered.reflow thead.sort:first-child tr:first-child > th:last-child{
+    -webkit-border-top-left-radius: 0;
+    -webkit-border-top-right-radius: 0;
+    -moz-border-radius-topleft: 0;
+    -moz-border-radius-topright: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .reflow.table-bordered th:first-child, .reflow.table-bordered td:first-child{
+    border-top: 1px solid #dddddd;
+  }
+  .reflow td:last-child, .reflow th:last-child{
+    border-top:1px solid #dddddd;
+    border-bottom:1px solid #dddddd;
+    margin-bottom:20px;
+
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-left-radius:3px;
+
+    -webkit-border-bottom-right-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    border-bottom-right-radius:3px;
+  }
+
+  tr.table-fixer td{display:none;}
+
+  .table-bordered tbody:last-child tr:last-child > td:first-child{
+    -webkit-border-bottom-left-radius: 0;
+    -moz-border-radius-bottomleft: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .reflow th.group-header {
+    margin-top: 0;
+  }
+}
+
