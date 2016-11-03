@@ -7,7 +7,8 @@ module.exports = function(defaults) {
     sassOptions: {
       includePaths: [
         'bower_components/activeadmin/app/assets/stylesheets',
-        'bower_components/bootstrap-sass/assets/stylesheets'
+        'bower_components/bootstrap-sass/assets/stylesheets',
+        'bower_components/bourbon/app/assets/stylesheets',
       ]
     }
   });
