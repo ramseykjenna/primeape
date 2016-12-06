@@ -1,0 +1,33 @@
+/* Home Page Post Styles*/
+.ribbon-container{border: 1px solid #CCC; border-radius: .5em; padding:.5em; margin-bottom: 1em;}
+.ribbon-container .title{font-size: 1.25em; font-weight: bold; line-height: 0em; color:#CCC;}
+.feature-title{display: block; overflow: hidden; text-overflow:ellipsis; white-space: nowrap;}
+a.poster-frame{display:inline-block; margin:0 0 1em 0;}
+.post-resources{display:block; margin-bottom: 1em;}
+
+.first, .second{margin-top: 1em;}
+.second {padding-top:1em; border-top:1px solid #CCC;}
+
+/* Home Page Nav Stacked*/
+.page-body ul.nav-stacked h2{font-size: 1.2em ; line-height: 1.4em;}
+.page-body ul.nav-stacked{list-style: none; padding:0; margin:0; border: 1px solid #CCC; border-radius: .5em; margin-bottom: 2em;}
+.page-body ul.nav-stacked li{display: block; padding:.5em; border-top: 1px solid #CCC;}
+.page-body ul.nav-stacked li:first-child{border-top: none;}
+
+/* Home Page Feature Pills*/
+.feature-pill{
+  margin-bottom: 1em;
+  border: 1px solid #CCC;
+  padding:1em;
+  border-radius: .5em;
+}
+
+.feature-pill .feature-overlay{
+  float:left;
+  margin-right:.25em;
+}
+.feature-overlay i{
+  font-size: 1em; line-height: 1em;
+  color:#CCC;
+  margin-bottom: 0;
+}

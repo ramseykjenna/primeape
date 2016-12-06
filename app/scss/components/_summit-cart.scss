@@ -1,0 +1,160 @@
+// Place all the styles related to the cart controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.line_item {
+	border: 1px solid black;
+	width: 305px;
+	margin-top: -1px;
+  div {
+  	display: inline-block;
+  	width: 150px;
+  }
+}
+
+.cart_header {
+	display: inline-block;
+	width: 150px;
+	font-weight: bold;
+}
+
+#cart_line_item_count {
+	display: inline;
+}
+
+.line-item {
+  .well {
+  	padding: 10px;
+  }
+}
+
+
+.line-item .control-group, .qty-box .text, .qty-box .help-block {
+	margin-bottom: 0;
+}
+/*Availabilty Block*/
+td.availability{
+  text-align: center;
+  p{line-height:1.2em; white-space:nowrap}
+}
+small{
+  display:block;
+}
+
+/*QTY Block*/
+.qty-box {
+	float: left;
+	padding-right: 10px;
+	margin-right: 10px;
+	label.checkbox {
+		margin-right: 5px;
+		vertical-align: top;
+		margin-top: 5px;
+	}
+	label.text input {
+		width: 50px;
+	}
+	.help-block {
+		/*font-size:10px;*/
+		color: #999;
+	}
+}
+/*Item Pricing Block*/
+.item-pricing {
+	/*background-color:#EEE;*/
+	float: right;
+	}
+	@media (max-width:450px) {
+		.item-pricing {
+			float: left;
+		}
+	}
+	.item-price, .item-total-price, .item-shipping-cost {
+		float: left;
+		width: 80px;
+		text-align: center;
+		padding: 5px;
+		border-left: 1px solid #999;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	.item-pricing .price {
+		white-space: nowrap;
+	}
+	.item-pricing .price-label {
+		font-size: 10px;
+		color: #999;
+	}
+/*Product Description Block*/
+.product-description {
+	float: left;
+	/*max-width: 300px;*/
+	width: 100%;/*background-color:#CCC;*/
+	}
+	.cart-product-thumbnail {
+		float: left;
+		margin-right: 10px;
+		background-color: #999999;
+		width: 50px;
+		height: 50px;
+	}
+	.product-name {
+		margin: 0;
+		padding: 0;
+		font-size: 16px;
+		line-height: 18px;
+	}
+	.product-numbers {
+		margin: 0;
+		padding: 0;
+		font-size: 12px;
+		line-height: 14px;
+		}
+		.mfg-number, .summit-number {
+			white-space: nowrap;
+		}
+/*Shipping Options Block*/
+.shipping-options {
+	clear: both;
+	}
+	@media (max-width:500px) {
+		.shipping-options .radio.inline, .shipping-options .checkbox.inline{
+			display:block;
+		}
+		.radio.inline + .radio.inline, .checkbox.inline + .checkbox.inline {
+			margin-left:0;
+		}
+	}
+
+/*Working Example for Product Name Wrapping*/
+#outer {
+    overflow: hidden;/* Makes #outer contain its floated children */
+    width: 100%;
+
+    /* Colours and borders for illustration purposes */
+    border: solid 3px #666;
+    background: #ddd;
+}
+
+#inner1 {
+    float: right;/* Make this div as wide as its contents */
+
+    /* Colours and borders for illustration purposes */
+    border: solid 3px #c00;
+    background: #fdd;
+}
+#inner0 {
+    float: left;/* Make this div as wide as its contents */
+
+    /* Colours and borders for illustration purposes */
+    border: solid 3px #ccc;
+    background: #ddd;
+}
+
+#inner2 {
+    overflow: hidden;/* Make this div take up the rest of the horizontal space, and no more */
+
+    /* Colours and borders for illustration purposes */
+    border: solid 3px #00c;
+    background: #ddf;
+    min-width:200px;
+}

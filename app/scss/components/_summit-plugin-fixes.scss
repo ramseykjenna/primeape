@@ -1,0 +1,7 @@
+/*Styles to be attached after plugin*/
+
+/* Magnific Popup Fix for White Backgrounds on PNGs with Transparency*/
+img.mfp-img{margin: 40px 0 40px; padding:0; background-color:#FFF;}
+@media screen and (max-width: 800px) and (orientation: landscape), screen and (max-height: 300px){
+  .mfp-img-mobile img.mfp-img{margin: 0;}
+}

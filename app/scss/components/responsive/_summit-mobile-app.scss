@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+body {
+  background-color: #FFF;
+}
+.or{
+  margin: -40px auto 15px auto;
+  background-color: #FFF;
+  padding:5px 10px;
+  display: block;
+  width: 100%;
+  max-width: 50px;
+  font-size: 20px;
+  line-height: 22px;
+}
+
+#mobile-shadow-wrapper{
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+@media(min-width: 768px){
+  #mobile-filter-menu{display:none;}
+}
+
+@media (max-width: 360px){
+  .scan-text{display: none;}
+}

@@ -1,0 +1,187 @@
+/* Navigation */
+nav#top-menu{
+  background-color: $summit-blue;
+}
+.toolbar #account-toolbar{
+  cursor: pointer;
+}
+.toolbar #account-toolbar:hover{
+  background-color: $soft-white;
+  color: $md-accent-blue;
+}
+
+
+nav#top-menu table{
+  font-weight: bold;
+  color: white;
+  width:100%;
+  margin:0;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+nav#top-menu table td{margin:0; padding:0; border:none;}
+nav#top-menu table td.spacer{width:100%;}
+nav#top-menu table td > a, nav#top-menu table td > button{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-left: 1px solid #c6d0da;
+  border-bottom:none;
+  color: white;
+  display: block;
+  font-size: 20px;
+  text-align: center;
+  margin: 0;
+  max-width: 100%;
+  letter-spacing: 1px;
+  font-weight: bold;
+  height: 100%;
+  padding: 0 30px;
+  font-weight: 300;
+  font-family: 'Lato', Arial, sans-serif;
+  line-height: 60px;
+}
+nav#top-menu table td > a #menu-icon{
+  margin:0;
+  top: 2px;
+}
+nav#top-menu table td > button{
+  background-color: $summit-blue;
+}
+nav#top-menu table td:first-child > a, nav#top-menu table td > button{
+  border: none;
+  outline: none;
+}
+nav#top-menu table td.cart-count{
+  max-width: 110px;
+}
+nav#top-menu table td.user{
+  width:60px;
+}
+nav#top-menu td > a:hover, nav#top-menu table td > button:hover{
+  background-color: $md-accent-blue;
+}
+nav#top-menu table td#search-input {
+  text-align: right;
+}
+nav#top-menu table td#search-input > input{
+  margin: 0;
+  background-color: rgba(0,0,0,.3);
+  border: none;
+  color: white;
+}
+nav#top-menu table td#search-input .typeahead.dropdown-menu{
+  left: 0;
+  right: 0;
+  max-width: 600px;
+  margin: 5px auto;
+}
+
+nav#top-menu table td#search-input .typeahead.dropdown-menu:after {
+  bottom: 100%;
+  left: 50px;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(255, 255, 255, 0);
+  border-bottom-color: white;
+  border-width: 7px;
+  margin-left: -7px;
+}
+
+nav#top-menu table td#open-search,
+nav#top-menu table td#cancel-search-box{
+  display: none;
+}
+
+nav#top-menu table td#submit-search > button{
+  padding: 0 15px;
+}
+nav#top-menu table td#submit-search > button:hover{
+  background-color: $summit-blue;
+  color:$lt-accent-blue;
+}
+@media(max-width: 600px){
+  nav#top-menu table td#open-search{
+    display: block;
+  }
+  nav#top-menu table td#submit-search{
+    display: none;
+  }
+  nav#top-menu table td#search-input{
+    display:none;
+  }
+
+  /* Show Search */
+  nav#top-menu.search table td#summit-logos,
+  nav#top-menu.search table td#open-search,
+  nav#top-menu.search table td#menu-launcher,
+  nav#top-menu.search table td#cart-button,
+  nav#top-menu.search table td#user,
+  nav#top-menu.search .toolbar:after, {
+    display: none;
+  }
+  nav#top-menu.search table td#submit-search,
+  nav#top-menu.search table td#search-input,
+  nav#top-menu.search table td#cancel-search-box {
+    display:table-cell;
+  }
+}
+
+nav#top-menu .summit-logo{
+  height: 30px;
+  max-width: initial;
+}
+
+/* Toolbar Styles */
+nav#top-menu .toolbar{
+  position: relative;
+  text-align: center;
+  display: block;
+  background-color: $lt-gray-accent;
+  color: $dk-gray-accent;
+}
+
+nav#top-menu .toolbar:after {
+  bottom: 100%;
+  right: 29px;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(233, 233, 233, 0);
+  border-bottom-color: #E9E9E9;
+  border-width: 10px;
+  margin-left: -10px;
+
+  -webkit-transition:right 500ms ease-in-out;
+  -moz-transition:right 500ms ease-in-out;
+  -o-transition:right 500ms ease-in-out;
+  transition:right 500ms ease-in-out;
+}
+
+nav#top-menu .toolbar .user-name{
+  display: block;
+  padding: 5px 10px;
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow:ellipsis;
+}
+nav#top-menu .toolbar .user-name:before{
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  content: "\f007";
+}
+
+nav.left-menu a:hover .youre-here{
+  opacity: .75;
+}

@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*Breadcrumb Filters*/
+ul.filter-crumb {
+  padding: 0;
+  margin: 0;
+}
+ul.filter-crumb li {
+  list-style: none;
+  display: inline-block;
+  line-height:16px;
+  float:left;
+}
+ul.filter-crumb li.filter {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #EEE;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  padding:0;
+}
+ul.filter-crumb li.filter a{
+  display:block;
+  padding: 5px 10px;
+}
+ul.filter-crumb li.filter a i{
+  color: #999;
+  float:right;
+  margin-left:5px;
+}
+ul.filter-crumb li.filter a:hover{
+  background-color:#E9E9E9;
+}
+ul.filter-crumb li.filter a:hover, ul.filter-crumb li.filter a:hover i {
+  color: #01506F;
+}
+ul.filter-crumb li.filter.within-separator{
+  border:none;
+  padding: 5px 10px;
+}
+ul#search-within-term-results{display:inline-block;}
+ul#search-within-term-results.filter-crumb li:first-child{margin-left:0px;}

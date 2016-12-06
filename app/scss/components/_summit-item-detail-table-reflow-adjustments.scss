@@ -1,0 +1,52 @@
+/* Cart, Order Detail and Invoices Pages */
+.reflow th{
+  font-size: 12px;
+  line-height: 12px;
+
+}
+.reflow .list-thumbnail{padding:0; text-align:center; margin: 10px -5px;}
+
+.uom{padding-left:20px; margin-top: -10px; display:block;}
+.mobile-prefix .muted{display:block;}
+.price small.muted{
+  display: block;
+  line-height: 1.2em;
+}
+
+input.select-item{margin:-8px 0 0 0;}
+td.qty-control{width:100px;}
+td.qty-control .uom small{display:block; font-size: 10px; line-height: 12px;}
+
+td.qty-control .tooltip.in{opacity: .95}
+td.qty-control .tooltip-inner{background-color: #CC0000;}
+td.qty-control .tooltip.top .tooltip-arrow {border-top-color:#CC0000}
+
+td.qty-control label, input.qty{margin-bottom:0;}
+td.qty-control label{ width:75px; vertical-align:middle;}
+
+tr.table-fixer td{height:2px; padding:0;}
+tr.subtotal td{border-bottom:none; background-color:#EAEAEA;}
+tr.shipping td, tr.taxes td, tr.total td{border-top:none; background-color:#EAEAEA !important;}
+.table-striped tbody > tr.shipping:nth-child(odd) > td,
+.table-striped tbody > tr.subtotal:nth-child(odd) > td,
+.table-striped tbody > tr.taxes:nth-child(odd) > td,
+.table-hover tbody tr.shipping:hover > td,
+.table-hover tbody tr.subtotal:hover > td,
+.table-hover tbody tr.taxes:hover > td {background-color:#EAEAEA;}
+
+td.total-labels{text-align:right;}
+td.qty-value{width:auto;}
+
+/* Order History and Invoice Detial Pages */
+.order-comments{height:100px; margin:0 0 15px 0;}
+ul.order-information {margin:0 0 15px 0;}
+ul.order-information li{list-style:none;}
+ul.order-information label{margin:0;}
+
+.price{margin-bottom:15px;}
+#cart-contents.table-bordered  td {
+  border-left:none;
+}
+#cart-contents.table-bordered td:first-child {
+  border-left: 1px solid #dddddd;
+}

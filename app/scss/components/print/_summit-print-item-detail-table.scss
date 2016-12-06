@@ -1,0 +1,74 @@
+/* Order History and Invoice Detial Pages */
+
+.order-comments{height:auto; width: 99%; display: block; margin-bottom: 1.5em;}
+ul.order-information {margin:0 0 1em 0; padding:0;}
+ul.order-information li{list-style:none;}
+ul.order-information label{margin:0;}
+
+
+/* Cart, Order Detail and Invoice Detail */
+td.total-labels{text-align:right;}
+
+/* Cart Page */
+.cart-menu, input.select-item, #send-to-associate{display:none;}
+.qty-control input{border:none; padding:0;}
+
+
+
+.field-container {
+  margin-bottom: 5px;
+}
+.field-container .field-label {
+  font-weight: bold;
+}
+.field-container .field-value {
+  display: block;
+}
+
+
+
+/* Account History */
+table{font-size: .8em; line-height: .8em;}
+.tab-pane{
+  display: none;
+}
+
+.nav-tabs, .ui-table-cell-label, .reflow thead.sort th a i.icon-sort, .daterangepicker, ul.dropdown-menu{
+  display: none;
+}
+
+ul.filter-option{margin:0; padding:0;}
+.sort-bar {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #E9E9E9;
+  margin-bottom: 15px;
+}
+.sort-bar ul.filter-option{
+  list-style: none;
+}
+
+.sort-bar li.sort-filter {
+  display: inline-block;
+}
+
+#status-options, #date-options, #datepicker, .input-daterange, #sort-filter, #job-accounts-options {
+  display: inline-block;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+#search-filter {
+  width: 99%;
+}
+#search-filter.input-append input {
+  width: 79%;
+}
+
+#search-filter input {
+  margin: 0;
+  margin-bottom: 5px;
+}
+#search-filter.input-append button {
+  width: 20%;
+}

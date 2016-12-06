@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Search Results Page*/
+#search-within-form{margin: 0px;}
+#show-results{text-align:right;}
+#result-count, #view-selector{display:inline-block;}
+#view-selector{padding-left:10px; margin-left:10px; border-left: 1px solid #CCC;}
+@media (max-width:640px){
+  #search-within-form{float:none;}
+  #show-results{text-align:left; margin-top:10px; font-size: 12px;}
+  /*#result-count, #view-selector{display:block;}*/
+  #result-count{margin:5px 0;}
+  #view-selector{float: right;}
+}
+
+.search-list h3 .search-term {
+  font-weight: bolder;
+  background-color: rgba(255,255,0,0.5);
+}
+
+.search-list .search-term {
+  font-weight: bolder;
+  background-color: rgba(255,255,0,0.3);
+}
+@media print{
+  .site-result, .product-result{
+  	position: relative;
+  	page-break-inside:avoid;
+  }
+
+  #search-within-form, #view-selector, .pagination{display:none;}
+}

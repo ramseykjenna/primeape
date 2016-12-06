@@ -1,0 +1,25 @@
+/* Product Detail Page */
+#share-this, #add-to-list-controls form{display:none;}
+#product-price-and-availability h1{font-size: 14pt; line-height: 16pt;}
+#product-price-and-availability .btn{display:none;}
+#product-images {
+  float: left;
+  margin-right: 1em;
+  width: 200px;
+  text-align: center;
+}
+/* Comparable Products */
+.well.comparable-header{padding:0;border:none;}
+.tab-content .print-only, .well h3{clear:both; border:1em solid #E1E1E1; color:#FFF; line-height: 0; font-size:1.25em; padding:0;  margin-top:2em; margin-bottom: .5em;}
+ul.substitute-products{margin:0; padding:0;}
+.substitute-product-details{display: block; overflow: hidden; zoom: 1;}
+ul.substitute-products li{border:1px solid #CCC; padding:.5em; display: block; margin:0 0 1em 0; list-style: none; border-radius:.25em;}
+.substitute-product-thumbnail {
+  float:left;
+}
+.substitute-product-thumbnail img{
+  border:none;
+  margin-right: 1em;
+  margin-left: 1em;
+  margin-bottom: 1em;
+}

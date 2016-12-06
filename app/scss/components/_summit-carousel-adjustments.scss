@@ -1,0 +1,146 @@
+.carousel {
+  margin-top: 15px;
+}
+
+.carousel-caption {
+  text-align: center;
+  padding: 30px 30px 15px;
+  position: relative;
+  background: none;
+  background-color: #FFFFFF;
+}
+
+.carousel-caption:after {
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(255, 255, 255, 0);
+  border-top-color: #ffffff;
+  border-width: 15px;
+  margin-left: -15px;
+}
+
+.carousel .item img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.carousel-caption h4,
+.carousel-caption p,
+.carousel-caption li {
+  color: #444;
+}
+
+.carousel-caption a {
+  color: #0CF;
+}
+
+.carousel-caption a:hover {
+  color: #008FC5;
+}
+
+.carousel-indicators {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  top: 0;
+  right: 0;
+}
+
+.carousel-indicators li {
+  background-color: #ccc;
+  display: inline-block;
+  float: none;
+  margin: 0 10px;
+}
+
+.carousel-indicators .active {
+  background-color: #008FC5;
+}
+
+.carousel-control,
+.carousel-control:focus,
+.carousel-control:active {
+  top: 75px;
+  font-size: 30px;
+  line-height: 30px;
+  color: #CCC;
+}
+
+.carousel-control.left {
+  left: 0;
+}
+
+.carousel-control.right {
+  right: 0;
+}
+
+.carousel-control:hover {
+  color: #008FC5;
+}
+
+.carousel-control:hover {
+  opacity: 1;
+}
+
+.carousel-controls {
+  padding: 5px 0;
+}
+
+.carousel-caption a.btn {
+  background-color: #0CF;
+  color: #FFF;
+  margin-top: 5px;
+  padding: 10px 15px;
+  font-size: 16px;
+}
+
+.carousel-caption a.btn:hover {
+  background-color: #008FC5;
+}
+
+.carousel-control {
+  background-color: transparent;
+  border: 0;
+  margin-top: 0;
+}
+
+@media(min-width:640px) {
+  .carousel-caption h4 {
+    font-size: 30px;
+    line-height: 34px;
+  }
+  .carousel-caption,
+  .carousel-caption p {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+
+@media(max-width: 640px) {
+  .carousel {
+    margin: 0 -15px;
+  }
+  .carousel-caption h4 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .carousel-caption,
+  .carousel-caption p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 480px),
+(max-height: 480px) {
+  .carousel-caption a.btn {
+    display: inline-block;
+  }
+}

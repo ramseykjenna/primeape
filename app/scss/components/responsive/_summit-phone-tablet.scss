@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+/* CSS Document */
+li.show-more {
+  text-align: center;
+}
+
+.row-fluid [class*="span"] {
+  min-height: 0;
+}
